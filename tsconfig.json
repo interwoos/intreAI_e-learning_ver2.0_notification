@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+      "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+     ],
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+     "moduleResolution": "node",
+    // Node.js と Next.js の型を読み込む
+     "types": ["node", "next"],
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts","types/**/*.d.ts"],
+  "exclude": ["node_modules"]
+}

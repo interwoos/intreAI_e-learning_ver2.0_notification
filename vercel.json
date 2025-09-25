@@ -1,0 +1,13 @@
+{
+  "crons": [
+    {
+      "path": "/api/jobs/process-queue?key=dev-cron",
+      "schedule": "*/1 * * * *"
+    }
+  ],
+  "functions": {
+    "app/api/jobs/process-queue/route.ts": {
+      "maxDuration": 60
+    }
+  }
+}
